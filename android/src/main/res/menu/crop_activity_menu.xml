@@ -26,7 +26,7 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/gray"
-            android:icon="@drawable/ic_done"
+            android:icon="@drawable/ic_invert_colors"
             android:title="@string/black" />
         <item
             android:id="@+id/reset"

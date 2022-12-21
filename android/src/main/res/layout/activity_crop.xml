@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -8,7 +9,9 @@
         android:id="@+id/picture_cropped"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:contentDescription="Picture Cropped"
+        tools:ignore="HardcodedText" />
 
     <!-- <RelativeLayout
         android:layout_width="wrap_content"
@@ -20,7 +23,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
-        android:scaleType="fitXY" />
+        android:contentDescription="Paper"
+        android:scaleType="fitXY"
+        tools:ignore="HardcodedText,ImageContrastCheck,ImageContrastCheck" />
 
     <com.sample.edgedetection.view.PaperRectangle
         android:id="@+id/paper_rect"
@@ -81,8 +86,7 @@
             android:layout_centerInParent="true"
             android:background="@drawable/round_button"
             android:padding="12dp"
-            app:srcCompat="@drawable/ic_crop"
-            app:tint="@android:color/white" />
+            app:srcCompat="@drawable/ic_crop" />
 
     </RelativeLayout>
 
