@@ -44,7 +44,7 @@ class CropPresenter(
                 ?: 1920, Bitmap.Config.ARGB_8888
         )
         Utils.matToBitmap(picture, bitmap, true)
-        iCropView.getPaper().setImageBitmap(bitmap)
+        iCropView.getPaper().setImageBitmap(Bitmap.createScaledBitmap(bitmap, 1080, 1920, false))
     }
 
     fun crop() {
